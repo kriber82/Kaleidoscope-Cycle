@@ -49,8 +49,10 @@ class Cycle : public kaleidoscope::Plugin {
 #endif
 
  private:
+  static uint8_t toModFlag(uint8_t keyCode);
   static Key last_non_cycle_key_;
   static uint8_t cycle_count_;
+  static uint8_t current_modifier_flags_;
 };
 };
 
