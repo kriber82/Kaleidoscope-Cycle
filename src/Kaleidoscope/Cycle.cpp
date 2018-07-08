@@ -89,21 +89,21 @@ EventHandlerResult Cycle::onKeyswitchEvent(Key &mapped_key, byte row, byte col, 
 
 uint8_t Cycle::toModFlag(uint8_t keyCode) {
   switch (keyCode) {
-    case Key_LeftShift.keyCode:
-    case Key_RightShift.keyCode:
-      return SHIFT_HELD;
-    case Key_LeftAlt.keyCode:
-      return LALT_HELD;
-    case Key_RightAlt.keyCode:
-      return RALT_HELD;
-    case Key_LeftControl.keyCode:
-    case Key_RightControl.keyCode:
-      return CTRL_HELD;
-    case Key_LeftGui.keyCode:
-    case Key_RightGui.keyCode:
-      return GUI_HELD;
-    default:
-      return 0;
+  case Key_LeftShift.keyCode:
+  case Key_RightShift.keyCode:
+    return SHIFT_HELD;
+  case Key_LeftAlt.keyCode:
+    return LALT_HELD;
+  case Key_RightAlt.keyCode:
+    return RALT_HELD;
+  case Key_LeftControl.keyCode:
+  case Key_RightControl.keyCode:
+    return CTRL_HELD;
+  case Key_LeftGui.keyCode:
+  case Key_RightGui.keyCode:
+    return GUI_HELD;
+  default:
+    return 0;
   }
 }
 
